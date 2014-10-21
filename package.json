@@ -1,0 +1,12 @@
+{
+  "name": "comic-list",
+  "version": "0.0.1",
+  "description": "pulls latest releases from comiclist.com",
+  "main": "index.js",
+  "author": "Daniel Mills",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.45.0",
+    "cheerio": "^0.17.0"
+  }
+}
