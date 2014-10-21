@@ -8,7 +8,9 @@ Scrapes the upcoming comic book releases from [ComicList](http://comiclist.com) 
 var comiclist = require('comic-list');
 
 comiclist(function(comics) {
-	console.log(comics);
+	comics.forEach(function(issue) {
+		console.log(issue.raw_name);
+	});
 });
 ````
 
@@ -30,3 +32,11 @@ Possible types are
 * graphic novel
 * trade paperback
 * single issue
+
+### Tests
+
+Tests are written with mocha and shouldjs, run using `npm test`
+
+### Note
+
+I'm just a comicbook fan who needed this for his own personal gains, I have no affliation with ComicList, just tons of affection.

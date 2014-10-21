@@ -1,12 +1,27 @@
 {
   "name": "comic-list",
   "version": "0.0.1",
-  "description": "pulls latest releases from comiclist.com",
+  "description": "pulls latest comic book releases from comiclist.com",
   "main": "index.js",
-  "author": "Daniel Mills",
+  "scripts": {
+    "test":"mocha test/tests.js"
+  },
+  "author": {
+	"name": "Daniel Mills",
+	"email":"mills.dma@gmail.com",
+    "url":"http://yomills.com"
+  },
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/dmamills/comic-list"
+  },
   "license": "MIT",
   "dependencies": {
     "request": "^2.45.0",
     "cheerio": "^0.17.0"
+  },
+  "devDependencies": {
+    "should": "^4.1.0",
+    "mocha": "^1.21.5"
   }
 }
