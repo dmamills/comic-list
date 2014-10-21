@@ -1,4 +1,5 @@
 # ComicList Scraper
+[![Build Status](https://secure.travis-ci.org/dmamills/comic-list.png)](http://travis-ci.org/dmamills/comic-list)
 
 Scrapes the upcoming comic book releases from [ComicList](http://comiclist.com) and converts them into a json array.
 
