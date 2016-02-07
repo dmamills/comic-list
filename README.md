@@ -6,13 +6,17 @@ Scrapes the upcoming comic book releases from [ComicList](http://comiclist.com) 
 ### Usage
 
 ```
-var comiclist = require('comic-list');
+const comiclist = require('comic-list');
 
-comiclist(function(comics) {
+//promise 
+comiclist().then(comics => {
 	comics.forEach(function(issue) {
 		console.log(issue.raw_name);
 	});
+}, err => {
+    console.log(err);
 });
+
 ````
 
 You will recieve an array of objects in the following structure
